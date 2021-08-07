@@ -229,26 +229,29 @@ if(isset($_GET["kategorija1"])) {
     $PerGet = 1;
     kategorizavimas($PerGet);
 } 
-if(isset($_GET["kategorija2"])) {
+else if(isset($_GET["kategorija2"])) {
     $PerGet = 2;
     kategorizavimas($PerGet);
 } 
-if(isset($_GET["kategorija3"])) {
+else if(isset($_GET["kategorija3"])) {
     $PerGet = 3;
     kategorizavimas($PerGet);
 } 
-if(isset($_GET["kategorija4"])) {
+else if(isset($_GET["kategorija4"])) {
     $PerGet = 4;
     kategorizavimas($PerGet);
 } 
-if(isset($_GET["kategorija5"])) {
+else if(isset($_GET["kategorija5"])) {
     $PerGet = 5;
     kategorizavimas($PerGet);
 } 
-if(isset($_GET["visi"])) {
+else if(isset($_GET["visi"])) {
     $PerGet = 6;
     kategorizavimas($PerGet);
-} 
+} else {
+    $PerGet = 6;
+    kategorizavimas($PerGet);
+}
 ?>
     </tbody>
 </table>    
